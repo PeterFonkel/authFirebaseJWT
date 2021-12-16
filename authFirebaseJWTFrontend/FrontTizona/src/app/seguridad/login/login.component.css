@@ -1,0 +1,11 @@
+.botones-login{
+    width: max-content;
+    margin: auto;
+}
+
+.btn{
+    border: black;
+}
+.usuario-logeado{
+    font-size: large;
+}

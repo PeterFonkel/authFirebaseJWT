@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-1 my-1"></div>
+    <div class="col-2 my-1">{{producto.nombre}}</div>
+    <div class="col-3 my-1">{{producto.descripcion}}</div>
+    <div class="col-2 my-1">{{producto.precio}}</div>
+    <button *ngIf="isLoggedAdmin" class="col-1 btn btn-danger m-1" (click)="eliminarProducto()">ELIMINAR</button>
+    <button *ngIf="isLoggedAdmin" class="col-1 btn btn-warning m-1" (click)="abrirModalModificacion()">MODIFICAR</button>
+    <button *ngIf="isLoggedUser && !isLoggedAdmin" class="col-2 btn btn-success m-1" (click)="agregarProducto()">AÑADIR AL CARRO</button>
+</div>
+

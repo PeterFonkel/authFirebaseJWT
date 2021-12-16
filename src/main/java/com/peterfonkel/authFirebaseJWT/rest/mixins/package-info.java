@@ -1,0 +1,1 @@
+package com.peterfonkel.authFirebaseJWT.rest.mixins;

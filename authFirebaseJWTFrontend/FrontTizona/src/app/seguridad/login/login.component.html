@@ -1,0 +1,40 @@
+
+<div>
+  <p *ngIf="usuarioLoggeado.email; else sinLoggear" style="color: white; display: inline-flex;">Usuario: {{usuarioLoggeado.email}} Rol: {{usuarioLoggeado.roles[0].rolNombre}}</p>
+  <ng-template #sinLoggear><p style="color: white; display: inline-flex;">Sin loggear</p></ng-template>
+  <button *ngIf="!usuarioLoggeado.email" type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+      Login
+  </button>
+  <button *ngIf="usuarioLoggeado.email" type="button" class="btn btn-danger m-2" data-bs-toggle="modal" (click)="exitLogin()">
+      Salir login
+  </button>
+</div>
+
+
+<!-- Modal Login-->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form action="">
+                  <div style="display: block;">
+                      <label for="">Email</label>
+                      <input type="text" class="m-3" [(ngModel)]="email" name="email">  
+                  </div>
+                  <div style="display: block;">
+                      <label for="">Contraseña</label>
+                      <input type="password" class="m-3" [(ngModel)]="password" name="password">
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" (click)="login()" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+      </div>
+  </div>
+</div>
