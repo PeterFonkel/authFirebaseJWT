@@ -139,7 +139,7 @@ Configuración de la seguridad.
 
 MyWebSecurity
 
-Clase de configuración de la seguridad. Se finen parametros como:
+Clase de configuración de la seguridad. Se definen parametros como:
  - End-points sin securizar: En nuestro caso solo "oauth".
  - Punto de entrada: JWTEntryPoint.
  - Filtro: JWTTokenFilter
