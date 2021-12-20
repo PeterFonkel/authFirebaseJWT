@@ -107,8 +107,24 @@ dependencies {
   }
 ``` 
 
+#### Paquete JWT
+
+JWTEntryPoint
+
+Clase que impleneta AuthenticationEntryPoint de Spring Security y que se encarga de lanzar una excepción cuando la llamada HTTP recibida no contiene en su cabecera un token. Es un primer filtro de formato de llamada con token.
+
+JWTProvider
+
+Clase que gestiona las operaciones internas con los token. Creación de un token, extraer un email de un token o verificar un token.
+
+JWTFilter
+
+Clase que gestiona las llamadas HTTP recibidas comprobando si contienen un token válido. Contiene un método "doFilterInternal" qie se ejecuta con cualquier llamada HTTP. Extrae el token y lo comprueba con la clase JWTProvider. Si es válido crea un "SecurityContext" del usuario autenticado. 
 
 
+#### OauthController
+
+Es el unico punto de acceso que no está securizado. Este controlador recibe una llamada para autenticarse con un token de Firebase, lo verifica con Google y devuelve un JWT creado por JWTProvider. Este token se adjuntará a las sucesivas llamadas HTTP del Front.
 
 
 
