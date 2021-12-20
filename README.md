@@ -1,16 +1,25 @@
-# authFirebaseJWT
+# Autenticación con Firebase y Jason Web Token (JWT)
 
 ## Descripción general
 
+Se trata de un proyecto de una aplicación con un Backend API REST HATEOAS y un Frontend con Angular 8. La arquitectura de la seguridad es la siguiente:
+
+ <p align="center">
+  <img width="200" height="auto" src="imagenes_doc/EsquemaSeguridad.png">
+</p>
+
 API REST.
-Seguridad API: Spring Security
+Seguridad API: Spring Security.
+
 Login con usuario y contraseña: Firebase (Google Cloud).
 
 El registro de usuarios lo hace el administrador.
 
-ADMIN: CRUD Productos.
+Se ha creado una clase productos como ejemplo con los siguientes permisos:
 
-USER: READ Productos.
+- ADMIN: CRUD Productos.
+
+- USER: READ Productos.
 
 ## Crear Proyecto en Firebase
 
