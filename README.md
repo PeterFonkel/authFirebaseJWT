@@ -129,6 +129,19 @@ Clase que gestiona las llamadas HTTP recibidas comprobando si contienen un token
 
 Es el unico punto de acceso que no está securizado. Este controlador recibe una llamada para autenticarse con un token de Firebase, lo verifica con Google y devuelve un JWT creado por JWTProvider. Este token se adjuntará a las sucesivas llamadas HTTP del Front.
 
+#### UserDetailsServiceImpl
 
+Clase que implementa la interfaz "UserDetailsService" y que tiene un método que devuelve un Usuario del tipo UserDetails. Es el tipo empleado para la gestión de permisos en Spring Security.
+
+#### Paquete config
+
+Configuración de la seguridad.
+
+MyWebSecurity
+
+Clase de configuración de la seguridad. Se finen parametros como:
+ - End-points sin securizar: En nuestro caso solo "oauth".
+ - Punto de entrada: JWTEntryPoint.
+ - Filtro: JWTTokenFilter
 
 
