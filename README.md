@@ -8,8 +8,7 @@ Se trata de un proyecto de una aplicación con un Backend API REST HATEOAS y un 
   <img width="900" height="auto" src="imagenes_doc/EsquemaSeguridad.png">
 </p>
 
-API REST.
-Seguridad API: Spring Security.
+Seguridad API: Spring Security y JWT.
 
 Login con usuario y contraseña: Firebase (Google Cloud).
 
