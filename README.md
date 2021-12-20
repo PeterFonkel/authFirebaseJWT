@@ -81,6 +81,9 @@ Estas claves son privadas. Añadir a gitignore antes de subir a github.
 
 
 ### En la API:
+
+En build.gradle:
+
 ```
 dependencies {
   ...
