@@ -5,7 +5,7 @@
 Se trata de un proyecto de una aplicación con un Backend API REST HATEOAS y un Frontend con Angular 8. La arquitectura de la seguridad es la siguiente:
 
  <p align="center">
-  <img width="200" height="auto" src="imagenes_doc/EsquemaSeguridad.png">
+  <img width="900" height="auto" src="imagenes_doc/EsquemaSeguridad.png">
 </p>
 
 API REST.
