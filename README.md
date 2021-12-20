@@ -12,12 +12,6 @@ ADMIN: CRUD Productos.
 
 USER: READ Productos.
 
-## Instalación de Firebase
-
-En el Front:
-
-# AutenticacionFirebase
-
 ## Crear Proyecto en Firebase
 
 1. Accedemos a la consola de Firebase con nuestro email de google: [Consola_Firebase](https://console.firebase.google.com/).
@@ -31,6 +25,8 @@ En el Front:
 
 
 ## Instalación de firebase
+
+### En el Front:
 
 En la consola de nuestro ordenador y en la carpeta de nuestro proyecto:
 
@@ -76,7 +72,7 @@ Estas claves son privadas. Añadir a gitignore antes de subir a github.
 
 
 
-En la API:
+### En la API:
 ```
 dependencies {
   ...
@@ -88,7 +84,7 @@ dependencies {
 
 ## Jason Web Token (JWT).
 
-En la API:
+### En la API:
 
 En build.gradle:
 
