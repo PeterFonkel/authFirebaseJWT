@@ -118,15 +118,15 @@ dependencies {
 
 #### Paquete JWT
 
-JWTEntryPoint
+- JWTEntryPoint
 
 Clase que impleneta AuthenticationEntryPoint de Spring Security y que se encarga de lanzar una excepción cuando la llamada HTTP recibida no contiene en su cabecera un token. Es un primer filtro de formato de llamada con token.
 
-JWTProvider
+- JWTProvider
 
 Clase que gestiona las operaciones internas con los token. Creación de un token, extraer un email de un token o verificar un token.
 
-JWTFilter
+- JWTFilter
 
 Clase que gestiona las llamadas HTTP recibidas comprobando si contienen un token válido. Contiene un método "doFilterInternal" qie se ejecuta con cualquier llamada HTTP. Extrae el token y lo comprueba con la clase JWTProvider. Si es válido crea un "SecurityContext" del usuario autenticado. 
 
@@ -143,7 +143,7 @@ Clase que implementa la interfaz "UserDetailsService" y que tiene un método que
 
 Configuración de la seguridad.
 
-MyWebSecurity
+. MyWebSecurity
 
 Clase de configuración de la seguridad. Se definen parametros como:
  - End-points sin securizar: En nuestro caso solo "oauth".
