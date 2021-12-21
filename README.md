@@ -93,6 +93,12 @@ dependencies {
 
 ## Jason Web Token (JWT).
 
+### Implementación
+
+ <p align="center">
+  <img width="900" height="auto" src="imagenes_doc/JWT.png">
+</p>
+
 ### En la API:
 
 En build.gradle:
