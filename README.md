@@ -143,7 +143,7 @@ Clase que implementa la interfaz "UserDetailsService" y que tiene un método que
 
 Configuración de la seguridad.
 
-. MyWebSecurity
+- MyWebSecurity
 
 Clase de configuración de la seguridad. Se definen parametros como:
  - End-points sin securizar: En nuestro caso solo "oauth".
